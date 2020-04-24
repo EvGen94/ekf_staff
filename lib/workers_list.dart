@@ -30,7 +30,7 @@ class _WorkerListState extends State<WorkerList> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text('${worker.name}${worker.surname} ${worker.middleName}'),
+        title: Text('${worker.name} ${worker.middleName} ${worker.surname}'),
         content: Text("ID ${worker.id}"),
         actions: <Widget>[
           FlatButton(
@@ -74,7 +74,7 @@ class _WorkerListState extends State<WorkerList> {
                       
                 Worker worker = workerList[index];
                 return ListTile(
-                    title: Text('${worker.name}${worker.surname} ${worker.middleName}'),
+                    title: Text('${worker.name} ${worker.middleName} ${worker.surname}'),
                     trailing: Text('${worker.dateOfBirth}'),
                        
                     subtitle: Text(
